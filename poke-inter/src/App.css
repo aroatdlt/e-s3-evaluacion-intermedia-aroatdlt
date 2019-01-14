@@ -1,0 +1,42 @@
+* body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+.container__title{
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon__list{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100vw;
+    justify-content: space-around;
+}
+
+.pokemon__card{
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.skills__list{
+    display: flex;
+    flex-direction: row;
+}
+
+.skill{
+    list-style: none;
+    margin-left: 10px;
+}

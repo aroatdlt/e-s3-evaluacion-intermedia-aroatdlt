@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
+        <header className="container__title">
           <h1 className="main__title">Mi lista Pokemon</h1>
         </header>
         <PokeList pokemon={pokemon}/>
