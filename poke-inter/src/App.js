@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import PokeList from './components/PokeList';
 
 const pokemon = [
   {"id":1,"name":"bulbasaur","types":["poison","grass"],"evolution":null,"url":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"},
@@ -21,17 +22,7 @@ class App extends Component {
         <header>
           <h1 className="main__title">Mi lista Pokemon</h1>
         </header>
-        <main>
-          <ul className="pokemon__list">
-            <li className="pokemon__card">
-              <img src="" alt="Imagen del Pokemon" className="pokemon__image"></img>
-              <h2 className="pokemon__name"></h2>
-              <ul className="skills_list">
-                <li className="skill"></li>
-              </ul>
-            </li>
-          </ul>
-        </main>
+        <PokeList pokemon={pokemon}/>
       </div>
     );
   }
